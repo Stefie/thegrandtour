@@ -16,7 +16,7 @@ module.exports = {
 		extensions: ['', '.js', '.jsx', '.json', '.styl', '.pug']
 	},
 	module: {
-		// noParse === aframe Bugfix for console warning
+		// noParse === aframe Bugfix for console warning. See https://github.com/aframevr/aframe/issues/1041
 		noParse: [
 			/node_modules\/aframe\/dist\/aframe-master.js/, // for aframe from NPM
 			/node_modules\/cannon\/build\/cannon.js/, // for aframe-extras from NPM
