@@ -13,10 +13,10 @@ module.exports = {
 	resolve: {
 		// Tell webpack to look for required files in node
 		modulesDirectories: ['node_modules'],
-		extensions: ['', '.js', '.jsx', '.json', '.styl', '.pug']
+		extensions: ['', '.js', '.jsx', '.json']
 	},
 	module: {
-		// noParse === aframe Bugfix for console warning. See https://github.com/aframevr/aframe/issues/1041
+		// noParse === a-frame Bugfix for console warning. See https://github.com/aframevr/aframe/issues/1041
 		noParse: [
 			/node_modules\/aframe\/dist\/aframe-master.js/, // for aframe from NPM
 			/node_modules\/cannon\/build\/cannon.js/, // for aframe-extras from NPM
