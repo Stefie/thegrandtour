@@ -7,7 +7,7 @@ module.exports = function(props) {
 			<img src="./app/assets/images/earth.png" id="earth" />
 			<img src="./app/assets/images/saturn.png" id="saturn" />
 			<img src="./app/assets/images/mars-sphere.png" id="mars" />
-			<img src="./app/assets/images/neptune.png" id="neptune" />
+			<img src="./app/assets/images/neptune-asteroids.png" id="neptune" />
 			<img src="./app/assets/images/sun-sphere.png" id="sun" />
 			<img src="./app/assets/images/stripes-yellow.png" id="stripes-yellow" />
 			<img src="./app/assets/images/stripes-orange.png" id="stripes-orange" />
