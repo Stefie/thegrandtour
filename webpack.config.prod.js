@@ -42,7 +42,7 @@ module.exports = {
 	stylus: {
 		preferPathResolver: 'webpack',
 		use: [
-			poststylus([ 'autoprefixer', 'rucksack-css' ])
+			poststylus([ 'autoprefixer' ])
 		]
 	},
 	plugins: [
