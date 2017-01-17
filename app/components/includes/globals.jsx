@@ -1,20 +1,35 @@
 import React from 'react';
 import {Entity} from 'aframe-react';
 import {ObjModel} from 'aframe-react-components';
+import 'aframe-bmfont-text-component';
+import 'aframe-animation-component';
+import 'aframe-alongpath-component';
 
 export class SpaceCubeMap extends React.Component {
 	render(){
 		return(
-			<a-entity cubemap="folder: ./app/assets/images/nasa_cubemap/"></a-entity>
+			<a-entity id="cubemap" cubemap="folder: ./app/assets/images/nasa_cubemap/"></a-entity>
 		);
 	}
 }
 
 export class Camera extends React.Component {
 	render(){
+		{/*
+			<Entity alongpath="path:40,0,0 0,0; closed:false; loop: false; dur:20000; delay:5000; inspector:true;" {...this.props}>
+				<Entity id="visitor" camera look-controls wasd-controls animation="property: rotation; to: 0 40 0; dur: 10000" rotation="-90 0 0" />
+			</Entity>
+
+			<Entity id="visitor" camera look-controls wasd-controls alongpath="path:-90,0,0 0,1,-1; closed:false; loop: true; dur:20000; delay:4000; inspector:true;" {...this.props} />
+		**/}
 		return(
 			<Entity>
-				<Entity id="visitor" camera look-controls wasd-controls {...this.props} />
+				<Entity id="visitor" camera look-controls rotation="0 0 0" {...this.props} >
+					{/*
+					<Entity cursor="fuse: true; maxDistance: 30; timeout: 500" position="0 0 -5" geometry="primitive: ring" material="color: white; shader: flat" />
+					*/}
+					<PosterText position='-1.43 -1.2 -2.8' rotation='-10 0 0' />
+				</Entity>
 			</Entity>
 		);
 	}
